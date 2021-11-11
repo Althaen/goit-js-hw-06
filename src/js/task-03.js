@@ -12,3 +12,19 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+// Здесь выводим в переменную разметку галереи из HTML-файла
+const gallery = document.querySelector(".gallery")
+// console.log(gallery)
+
+// const element = `<li><img src=${images[0].url} alt=${images[0].alt}/><li>`
+// console.log(element)
+
+const markUp = images.map(element => {
+  return `<li><img src=${element.url} alt=${element.alt} height = 375 />`
+})
+// console.log(...markUp);
+
+// Здесь присоединяем строки получившейся разметки изображений в переменную разметки
+gallery.insertAdjacentHTML("afterbegin", markUp);
+// Добавляем классы на изображения, чтобы сделать оформление
+// Потом аппендим эту переменную в наш файл HTML
