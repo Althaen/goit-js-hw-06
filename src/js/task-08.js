@@ -1,8 +1,8 @@
 const loginForm = document.querySelector("form.login-form");
 // console.log(loginForm);
-const emailInput = document.querySelectorAll("input")[0];
+const emailInput = loginForm.elements.email;
 // console.log(emailInput);
-const passwordInput = document.querySelectorAll("input")[1];
+const passwordInput = loginForm.elements.password;
 // console.log(passwordInput);
 
 const output = {

@@ -20,9 +20,9 @@ const gallery = document.querySelector(".gallery")
 // console.log(element)
 
 const markUp = images.map(element => {
-  return `<li><img src=${element.url} alt=${element.alt} height = 375 />`
+  return `<li><img src="${element.url}" alt="${element.alt}" height = 375px; /></li>`
 })
-// console.log(...markUp);
+console.log(...markUp);
 
 // Здесь присоединяем строки получившейся разметки изображений в переменную разметки
 gallery.insertAdjacentHTML("afterbegin", markUp);
