@@ -16,7 +16,7 @@ function createBoxes(amount) {
     }px; background-color: ${getRandomHexColor()}";></div> `;
     markUp.push(element);
   }
-  container.insertAdjacentHTML("afterbegin", markUp);
+  container.insertAdjacentHTML("afterbegin", markUp.join(" "));
   markUp = [];
 }
 
